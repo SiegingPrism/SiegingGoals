@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiegingGo | Agentic Productivity</title>
+
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-panel">
+            <div>
+                <div class="logo">SIEGINGGO</div>
+                <nav class="nav-menu">
+                    <div class="nav-item active" data-page="dashboard">
+                        <span>⚡</span> Dashboard
+                    </div>
+                    <div class="nav-item" data-page="tasks">
+                        <span>✅</span> Tasks
+                    </div>
+                    <div class="nav-item" data-page="goals">
+                        <span>🎯</span> Goals
+                    </div>
+                    <div class="nav-item" data-page="habits">
+                        <span>🔄</span> Habits
+                    </div>
+                    <div class="nav-item" data-page="analytics">
+                        <span>📊</span> Analytics
+                    </div>
+                    <div class="nav-item" data-page="calendar">
+                        <span>📅</span> Calendar
+                    </div>
+                    <div class="nav-item" data-page="focus">
+                        <span>⏳</span> Focus Zone
+                    </div>
+                </nav>
+            </div>
+
+            <div class="sidebar-footer">
+                <button id="theme-toggle" class="btn btn-ghost"
+                    style="width: 100%; justify-content: flex-start; margin-bottom: 1rem; border: 1px solid rgba(255,255,255,0.05);">
+                    <span class="theme-icon">💧</span> <span class="theme-label">Liquid Theme</span>
+                </button>
+                <div class="user-status">
+                    <!-- Injected via JS -->
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content" id="main-view">
+            <!-- Dynamic Content Injected Here -->
+            <div class="flex-center" style="height: 100%;">
+                <div class="loading-spinner">Initializing Core Engine...</div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/db.js"></script>
+    <script src="js/components/dashboard.js"></script>
+    <script src="js/components/tasks.js"></script>
+    <script src="js/components/goals.js"></script>
+    <script src="js/components/habits.js"></script>
+    <script src="js/components/analytics.js"></script>
+    <script src="js/components/skills.js"></script>
+    <script src="js/components/focus.js"></script>
+    <script src="js/components/calendar.js"></script>
+    <script src="js/components/auth.js"></script>
+    <script src="js/ai_engine.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
